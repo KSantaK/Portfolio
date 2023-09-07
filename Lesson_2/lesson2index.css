@@ -1,0 +1,55 @@
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: red;
+    display: flex;
+  }
+  
+  main {
+    width: 100vw;
+    height: 500px;
+    background-color: blue;
+  }
+  
+  footer {
+    width: 100vw;
+    height: 50px;
+    background-color: azure;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  header li {
+    color: blue;
+  }
+  
+  header > li {
+    color: yellow;
+  }
+  
+  footer li {
+    color: red;
+  }
+  
+  input[type="email"] {
+    border: 2px solid red;
+    padding: 10px;
+  }
+  
+  label[for="name"] {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  #work-experience .work,
+  #work-experience .education {
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 250px;
+    padding: 4px;
+    margin: 10px;
+  }

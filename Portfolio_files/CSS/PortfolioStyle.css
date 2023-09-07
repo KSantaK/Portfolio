@@ -1,0 +1,138 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 55px;
+    background: rgb(43, 41, 41)
+    }
+
+header img {
+    width: 75px;
+    height: 55px;
+  }
+header h1{
+  margin-left: 15px;
+  font-style: italic;
+  color: lightsalmon;
+}
+header div {
+  display: flex;
+  align-items: center;
+} 
+
+  header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-right: 20px;
+    list-style: none;
+  }
+
+  a {
+    color: rgb(184, 85, 74);
+    text-decoration: none;
+}
+    a:hover {
+      color: rgb(233, 227, 227);
+    }
+
+    
+section#home {
+  width: 100vw;
+  height: calc(100vh - 65px);
+  color: white;
+  font-size: 24px;
+  position: relative;
+  background: url("../Images/Cesvainepic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    }
+
+#home .home-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  }
+  
+  section#home .home-content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    height: calc(100vh - 30px);
+  }
+  #home .text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    right: 10%;
+    overflow: hidden;
+    transform: translateY(-50%);
+    }
+    
+  section#home .text p {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+  section#history div h2 {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+    }
+  section#history p {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    #history .pic {
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px;
+  
+    }
+
+  section#bildes div h2 {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+    }
+ section#bildes .galerija img {
+      height: 60%;
+      width: 60%;
+      padding: 10px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      
+ }
+  section#tourists div h2 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;   
+  }
+
+  table, th, td {
+    border: 1px solid;
+    width: 75%;
+    padding: 2px;
+    margin-left: 15%;
+  }
+
+  section#tourists div p {
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: darkred;   
+  }
+  section#form div h2 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;   
+  }
