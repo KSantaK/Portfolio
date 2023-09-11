@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    font: Georgia
+    font-family: Georgia;
+    box-sizing: border-box;
   }
   h2 {
     font-size: 30px

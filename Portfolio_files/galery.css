@@ -5,7 +5,7 @@ header {
     top: 0;
     width: 100vw;
     height: 55px;
-    background: #2b2929
+    background: rgb(43, 41, 41)
     }
 
 header img {
@@ -16,6 +16,7 @@ header h1{
   margin-left: 15px;
   font-style: italic;
   color: lightsalmon;
+ 
 }
 header div {
   display: flex;
@@ -63,7 +64,7 @@ section#home {
     font-size: 50px;
     font-weight: bold;
     height: calc(100vh - 30px);
-    text-shadow: 3px 2px 3px rgb(73, 72, 72);
+    text-shadow: chocolate;
   }
   #home .text {
     position: absolute;
@@ -79,93 +80,61 @@ section#home {
       margin: 10px 0;
     }
 
-  section#history div h2 {
-      padding: 5px;
-      display: flex;
-      justify-content: center;
-      text-shadow: 3px 2px 3px rgb(73, 72, 72);
-    }
-  section#history p {
-      font-size: 20px;
-      padding: 10px;
-    }
 
-    #history .pic {
-      display: flex;
-      justify-content: flex-end;
-      padding: 5px;
-  
-    }
 
   section#bildes div h2 {
       padding: 5px;
       display: flex;
       justify-content: center;
       text-shadow: 3px 2px 3px rgb(73, 72, 72);
+  
+
     }
-
-    section#bildes .galerija {
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-   }
-   .galerija img {
-      height: 300px;
-      width: 400px;
-      padding-right: 5px;
-      padding-left: 5px;
-      padding-top: 5px;
-      padding-bottom: 0px;
-   }
-
-   .galerija img {
-    opacity: 0.3;
-    filter: alpha(opacity=30); 
-  }
- 
-  .galerija img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); 
-  }
-
-  section#tourists div h2 {
-    padding: 5px;
+ section#bildes .galerija {
+    padding: 20px;
     display: flex;
-    justify-content: center;  
-    text-shadow: 3px 2px 3px rgb(73, 72, 72); 
-  }
-
-  table, th, td {
-    border: 1px solid; 
-    border-color: rgb(177, 172, 172) ;
-    width: 75%;
-    padding: 2px;
-    margin-left: 15%;
-  }
-
-  section#tourists div p {
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    color: darkred;   
-  }
+ }
+ .galerija img {
+    height: 300px;
+    width: 400px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    
+ }
+    img {
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* This is for IE8 and other earlier browsers */
+ }
+ 
+    img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* This is for IE8 and other earlier browsers */
+ }
+
+      
   section#form div h2 {
     padding: 5px;
     display: flex;
-    justify-content: center;  
-    text-shadow: 2px 1px 2px rgb(104, 103, 103); 
+    justify-content: center;   
   }
 
+  .form-desing {
+    display: flex; 
+    align-items: center;
+  }
+  
   button {
     font-size: 16px;
     padding: 6px;
     width: 100px;
     border-radius: 4px;
     background-color: rgb(207, 201, 201);
-    margin-bottom: 15px;
   }
+
   input, select, textarea {
     box-sizing: border-box;
     width: 30%;
@@ -179,9 +148,8 @@ section#home {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
-  
-  footer {
-    text-align: center;
-    font-style: italic;
-    font-size: 14px;
+
+  footer div {
+    padding: 10px;
+
   }

@@ -10,8 +10,7 @@ const object ={
             size: "45 mm",
             display: 45.2,
             material: "Titanium",
-            sleep_tracking: "yes", 
-        
+            sleep_tracking: "yes",
         },
         {
             size: "40 mm",

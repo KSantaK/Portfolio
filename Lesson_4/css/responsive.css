@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    #about-me .red {
+      width: 25vw;
+    }
+    #about-me .blue {
+      width: 50vw;
+    }
+  }
