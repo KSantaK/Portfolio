@@ -122,11 +122,17 @@ section#home {
     justify-content: center;   
   }
 
-  .form-desing {
-    display: flex; 
-    align-items: center;
+  fieldset {
+    display: block;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 0.75em;
+
   }
-  
+
   button {
     font-size: 16px;
     padding: 6px;

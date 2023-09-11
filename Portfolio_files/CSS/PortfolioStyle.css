@@ -157,7 +157,19 @@ section#home {
     justify-content: center;  
     text-shadow: 2px 1px 2px rgb(104, 103, 103); 
   }
-
+  .kontakti {
+    display: flex;
+    justify-content: space-around;
+  }
+  fieldset {
+    display: block;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 4px;
+  }
   button {
     font-size: 16px;
     padding: 6px;
@@ -184,4 +196,6 @@ section#home {
     text-align: center;
     font-style: italic;
     font-size: 14px;
+    background-color: #2b2929;
+    color: aliceblue;
   }
