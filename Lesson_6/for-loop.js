@@ -1,28 +1,51 @@
-const array = [1,2,3,4,5,6,7,8,9,10]; //array lenght = 10
+const array = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]; // array.length = 10
 
-for (let i= 0; i < array.length; i= i+1) {
-    console.log(i); 
-} 
-
-// for (let i= 0; i < array.length; i= i+2) {
-//    console.log(array[i]); 
-//} 
-
-
-//} 
-// i+=10 ir tas pats kas i=i+10
-// i-=10 ir tas pats kas i=i-10
-// ++i palielina pirms
-// i++ palielina pēc
-
-let x = 0
-let y= 0
-
-console.log (++x)
-console.log (y++)
-
+for (let i = 0; i < array.length; i++) {
+  //   console.log(array[i]);
+}
 
 const arrayWithEmails = [
-    "test@gmail.com",
+  "test@gmail.com",
+  "Hell!@£@gmail.com",
+  ".gmail",
+  "234@inbox",
+];
 
-]
+for (let i = 0; i < arrayWithEmails.length; i++) {
+  if (!arrayWithEmails[i].includes("@")) {
+    console.log("Email is not valid");
+  }
+}
+
+const nameArray = ["john", "TaNE", "", "J", "Bames", "Kenny"];
+for (let i = 0; i < nameArray.length; i++) {
+  const name = nameArray[i];
+
+  if (!name) {
+    console.log(`Name is not valid: ${i}: ${name}`);
+  }
+
+  const currentFirstLetter = name.charAt(0);
+  const uppercaseFirstLetter = currentFirstLetter.toUpperCase();
+
+  if (currentFirstLetter !== uppercaseFirstLetter) {
+    console.log(`Name is not valid: ${i}: ${name}`);
+  }
+}
+
+const currentColor = "yellow";
+const colors = ["red", "green", "yellow", "blue", "orange", "purple"];
+
+let isColorFound = false;
+
+for (let i = 0; i < colors.length; i++) {
+  if (currentColor === colors[i]) {
+    console.log("Color is found");
+    isColorFound = true;
+    break;
+  }
+
+  console.log("Color is not found");
+}
+
+console.log(isColorFound);
