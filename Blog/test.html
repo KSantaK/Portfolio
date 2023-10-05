@@ -6,56 +6,85 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./test.css" />
         <link rel="stylesheet" href="./responsive.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
     <body>
         <div class="header">
             <h2> Things around us</h2>
         </div>
         <div class="row">
+        <!-- Section in the center -->
             <div class="leftcolumn">
+        <!-- Blog post 1 -->
                 <div class="card">
-                <h2>Deserti</h2>
-                <h5> Pina colada panna cotta , Sept 23, 2023</h5>
-                <img src="images/panna2.png" alt="Logo" style="max-width: 60%; and height: auto">
-                <p>Ananasa un kokosriekstu kombinācija ir superizdevusies gan tad, ja to pagatavo kokteilī, gan tad, ja to savieno vasaras desertā, šoreiz tad pieķēros tam otrajam.</p>
-                <nav>
-                    <ul>
-                        <li>Bļodiņā ber želatīnu, to aplej ar konservēto ananasu sīrupu un atstāj uzbriest 15 minūtes.</li>
-                        <li>Katliņā lej kokosriekstu pienu, pievieno cukuru un maisot karsē, līdz cukurs izšķīdis.</li>
-                        <li>Atsevišķi viendabīgā masā sablendē ananasus.</li>
-                        <li>Uzkarsēto kokosriekstu pienu noņem no plīts, tajā iemaisa un izšķīdina uzbriedināto želatīnu, tad pievieno un iemaisa vaniļu un ananasu biezeni. desertu atdzesē vismaz 2 stundas (vai noregulē ledusskapi visaukstākajā temperatūrā un iztiek ar vienu vienīgu stundu), tad to dekorē ogām, augļiem, piparmētru lapiņām un pasniedz.</li>
-                    </ul>
-                </nav>
-                <button id="btn1" class="btn"><i class="fa-regular fa-thumbs-up"></i></button>
-                </div>  
+                    <h2>Deserti</h2>
+                    <h5> Pina colada panna cotta , Sept 23, 2023</h5>
+                    <img src="images/panna2.png" alt="Logo">
+                    <p>Ananasa un kokosriekstu kombinācija ir superizdevusies gan tad, ja to pagatavo kokteilī, gan tad, ja to savieno vasaras desertā, šoreiz tad pieķēros tam otrajam.</p>
+                        <nav>
+                             <ul>
+                                <li>Bļodiņā ber želatīnu, to aplej ar konservēto ananasu sīrupu un atstāj uzbriest 15 minūtes.</li>
+                                <li>Katliņā lej kokosriekstu pienu, pievieno cukuru un maisot karsē, līdz cukurs izšķīdis.</li>
+                                <li>Atsevišķi viendabīgā masā sablendē ananasus.</li>
+                                <li>Uzkarsēto kokosriekstu pienu noņem no plīts, tajā iemaisa un izšķīdina uzbriedināto želatīnu, tad pievieno un iemaisa vaniļu un ananasu biezeni. desertu atdzesē vismaz 2 stundas (vai noregulē ledusskapi visaukstākajā temperatūrā un iztiek ar vienu vienīgu stundu), tad to dekorē ogām, augļiem, piparmētru lapiņām un pasniedz.</li>
+                            </ul>
+                        </nav>
+        <!-- Icon -->
+                <div class="icons-container">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="fa-heart-count">0</span>
+                </div>
+        <!-- Comment -->
+                <div id="post-form">
+                    <h5></h5>
+                    <form id="new-post-form">
+                        <label for="post-content">Ziņa:</label>
+                        <textarea id="post-content" rows="4" required></textarea><br>
+                        <button type="submit">Pievienot</button>
+                    </form>
+        <!-- Comment field -->
+                    <div id="post-list">
+                        <h5>Komentāri</h5>
+                        <div id="posts"></div>
+                    </div>
+                </div>
+                </div>
+        <!-- Blog post 2 -->
                 <div class="card">
-                <h2>Ceļošana</h2>
-                <h5>Skaistākās pludmales, Sep 25, 2023</h5>
+                    <h2>Ceļošana</h2>
+                    <h5>Skaistākās pludmales, Sep 25, 2023</h5>
                 <div>
-                <img src="images/anse-lazio.jpg" alt="Logo" style="max-width: 60%; and height: auto"> 
+                    <img src="images/anse-lazio.jpg" alt="Logo"> 
                 </div>
-                <p>Anse Lazio atrodas Pralēnas salā, un tā ir viena no populārākajām vietām. Tur, patiesībā, tieši šīs pludmales dēļ daudzi ceļotāji nolemj ceļojumu virzīt Šeišelu salu virzienā. Šī vieta ir pati pilnība, kurā caur palmām parādās tirkīzzilais ūdens un vilinošā atpūtas zona. Viens no "plusiem" šai pludmalei ir tāds, ka ūdens tajā ātri paliek dziļš, taču šī iemesla dēļ tur bieži dežūrē glābēji. Vidējā ūdens temperatūra ir +27 grādi pēc Celsija! Tur var gan ķert viļņus, gan arī paglabāt atmiņā vienreizējus dabas skatus – krasta līnija ir patiesi neparasta un pārsteidzoša.</p>
+                    <p>Anse Lazio atrodas Pralēnas salā, un tā ir viena no populārākajām vietām. Tur, patiesībā, tieši šīs pludmales dēļ daudzi ceļotāji nolemj ceļojumu virzīt Šeišelu salu virzienā. Šī vieta ir pati pilnība, kurā caur palmām parādās tirkīzzilais ūdens un vilinošā atpūtas zona. Viens no "plusiem" šai pludmalei ir tāds, ka ūdens tajā ātri paliek dziļš, taču šī iemesla dēļ tur bieži dežūrē glābēji. Vidējā ūdens temperatūra ir +27 grādi pēc Celsija! Tur var gan ķert viļņus, gan arī paglabāt atmiņā vienreizējus dabas skatus – krasta līnija ir patiesi neparasta un pārsteidzoša.</p>
                 <div> 
-            <button id="btn2" class="btn"><i class="fa-regular fa-heart"></i></button>
+        <!-- Icon -->
+                <div class="icons-container">
+                    <button id="btn1" class="btn"><i class="fa-regular fa-thumbs-up"></i></button>
+                    <span class="fa-thumbs-up-count">0</span>
                 </div>
-                 <form id="new-post-form">
-                    <label for="post-content">Komentāri:</label>
-                    <textarea id="post-content" rows="3" required></textarea><br>
-                    <button type="submit">Pievienot</button>
-                </form> 
-                </div>           
             </div>
-            <div class="rightcolumn">
-                <div class="card">
-                    <h2>About Me</h2>
-                        <div class="fakeimg" style="height:100px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <!-- Comment -->
+            <div id="post-form">
+                <h5></h5>
+                <form id="new-post-form">
+                    <label for="post-content">Ziņa:</label>
+                    <textarea id="post-content" rows="4" required></textarea><br>
+                    <button type="submit">Pievienot</button>
+                </form>
+        <!-- Comment field -->
+                <div id="post-list">
+                    <h5>Komentāri</h5>
+                    <div id="posts"></div>
                 </div>
+            </div>
+                </div>
+            </div>  
+        <!-- Section on the right field -->
+                <div class="rightcolumn">
                 <div class="card">
-                    <h3>Popular Post</h3>
-                    <div class="fakeimg">Image</div><br>
-                    <div class="fakeimg">Image</div><br>
-                    <div class="fakeimg">Image</div>
+                    <h3>Music</h3>
+                    <iframe width="180" height="auto" src="https://www.youtube.com/embed/ZZEZysJ4coA?si=s9Kwq71u9bLMblED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
                 </div>
                 <div class="card">
                     <h3>Izmantotā informācija</h3>
@@ -64,11 +93,11 @@
                         <li><a href="https://www.delfi.lv/turismagids/galamerki/septinas-skaistakas-pludmales-pasaule-kuras-aizbegt-no-ziemas.d?id=49522803"> Delfi tūrisms</a></li>
                     </ul>
                 </div>
-            </div>
+                </div>
         </div>
         <div class="footer">
             <h5>My homework © 2023</h5>
         </div>
-   
+        <script src="./test.js"></script>
     </body>
 </html>

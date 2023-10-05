@@ -35,13 +35,6 @@ body {
 }
 
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
 /* Add a card effect for articles */
 .card {
    background-color: white;
@@ -50,13 +43,17 @@ body {
    font-size: 14px;
 }
 
+.card img {
+  max-width: 60%; 
+  height: auto;
+ }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Footer */
 .footer {
   padding: 20px;
@@ -65,4 +62,15 @@ body {
   margin-top: 20px;
 }
 
-style="max-width: 60%; and height: auto"> 
+.icons-container {
+  display: flex;
+  justify-content: end;
+  padding: 25px 20px;
+  align-items: center;
+  cursor: default;
+}
+.fa-regular {
+  margin-right: 6px;
+  cursor: pointer;
+  color: crimson;
+}
