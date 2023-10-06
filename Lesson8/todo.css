@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo-wrapper {
+    margin: 10 px;
+}
+.todo-item {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+.create-todo-wrapper {
+    width:100 vw;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    flex-direction: column;
+}
