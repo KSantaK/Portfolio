@@ -85,5 +85,7 @@ body {
 
 .post-box {
 border:1px solid #ccc;
-
+box-sizing: border-box;
+width: 700px;
+height: 80px;
 }
