@@ -19,6 +19,7 @@ createTodoButton.addEventListener("click", () => {
     const todoElement= createTodoElement(inputValue);
 
     todoWrapper.appendChild(todoElement);
+ 
 
     inputField.value = "";
 });
